@@ -1,3 +1,4 @@
+import "./App.css";
 import React, {useState} from "react";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     const newTodo = {
       id: Math.random(),
       todo: todo,
-    };
+    }; 
 
     // add the todo to the list
     setList([...list, newTodo]);
@@ -26,7 +27,7 @@ function App() {
   };
   
   return (
-    <div>
+    <div className="App">
       <h1>Todo List</h1>
       <input
         type="text"
